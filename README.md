@@ -17,23 +17,23 @@ A simple real-time chat application built with Node.js and gRPC, featuring autom
 
 ## Installation
 
-\```bash
+```bash
 git clone <repository-url>
 cd grpc-chat
 npm install
-\```
+```
 
 ## Usage
 
 1. Start the server:
-\```bash
+```bash
 node server.js
-\```
+```
 
 2. Start client(s):
-\```bash
+```bash
 node client.js
-\```
+```
 
 3. Enter username when prompted
 4. Type messages and press Enter to send
@@ -42,13 +42,13 @@ node client.js
 
 ## Project Structure
 
-\```
+```
 grpc-chat/
 ├── chat.proto        # Protocol Buffer definition
 ├── server.js         # Chat server implementation
 ├── client.js         # Chat client implementation
 └── package.json      # Project dependencies
-\```
+```
 
 ## Key Features
 
