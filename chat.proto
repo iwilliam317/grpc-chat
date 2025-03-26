@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+service ChatService {
+    rpc JoinChat (JoinRequest) returns (stream ChatMessage) {}
+    rpc SendMessage (ChatMessage) returns (Empty) {}
+}
+
+message JoinRequest {
+    string username = 1;
+    bool isReconnection = 2;
+}
+
+message ChatMessage {
+    string username = 1;
+    string message = 2;
+    string timestamp = 3;
+}
+
+message Empty {}
